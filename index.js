@@ -11,10 +11,11 @@ app.listen(PORT, ()=>{
 
 app.get('/webhook',(req,res)=>{
     // RECEPTOR
-    console.log(req.body)
+    console.log(req)
+    
     res.status(200).send({
         "Prueba":"Ademas",
-        "Recibido": req
+        "Recibido": "0"
     });
 
     // res.status(200).send({
