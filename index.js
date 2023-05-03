@@ -10,7 +10,7 @@ app.listen(PORT, ()=>{
 })
 
 app.get('/webhook',(req,res)=>{
-    // RECEPTOR
+    // Cambiar la petición no por HTTP sino por MQTT, de momento lo dejamos asi.
     console.log(req)
 
     res.status(200).send({
