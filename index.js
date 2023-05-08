@@ -10,7 +10,7 @@ app.listen(PORT, ()=>{
 })
 
 app.get('/webhook',(req,res)=>{
-    // Cambiar la petición no por HTTP sino por MQTT, de momento lo dejamos asi.
+    
     console.log(req.body)
 
     res.status(200).send({
@@ -18,7 +18,4 @@ app.get('/webhook',(req,res)=>{
         "data": req.body.data
     });
 
-    // res.status(200).send({
-    //     "Prueba":"Prueba - Tambien"
-    // })
 });
